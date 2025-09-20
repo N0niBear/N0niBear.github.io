@@ -1,0 +1,70 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color:#f5f8f6;
+    color:#1a1a1a;
+}
+
+header {
+    background-color:#0d261c;
+    color:#f5f8f6;
+    padding: 1em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+nav a {
+    color:#a4d0d5;
+    margin: 0 2em;
+}
+
+section {
+    padding: 2em;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 1em 0 0;
+}
+
+@media (min-width: 780px) {
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr; /* two columns: h1 and nav */
+    align-items: center;             /* vertical centering */
+    padding: 0 2em;
+}
+
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end; /* push links to the right */
+    gap: 2em;
+}
+/*
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+*/
+
+}
