@@ -43,28 +43,16 @@ form textarea {
 
 header {
     display: grid;
-    grid-template-columns: auto 1fr; /* two columns: h1 and nav */
-    align-items: center;             /* vertical centering */
+    grid-template-columns: auto 1fr;
+    align-items: center;             
     padding: 0 2em;
 }
 
 nav {
     display: grid;
     grid-auto-flow: column;
-    justify-content: end; /* push links to the right */
+    justify-content: end; 
     gap: 2em;
 }
-/*
-body {
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;
-    grid-template-rows: auto;
-}
-
-nav {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-*/
 
 }
